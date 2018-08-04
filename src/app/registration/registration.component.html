@@ -1,0 +1,102 @@
+<br/>
+<div class="container">
+  <div class="he">
+    <h3 class="left">Registration</h3>
+  </div>
+  <ul class="right hes">
+    <li class="inline">
+      <a routerLink="/home">Home</a>
+    </li>
+    <li class="inline"> / Registration</li>
+  </ul>
+</div>
+
+<br/><br/><br/><br/><hr/>
+<div>
+  <h1 class="main box">Swimming Admission Form</h1>
+</div>
+
+<form>
+  <fieldset>
+    <legend class="leg"><strong>Personal Information</strong></legend>
+    <div class="row">
+      <div class="inlinespace">
+        <label>Initial: </label><br/>
+        <select name="initial" class="user">
+          <option selected="">Select Initial</option>
+          <option value="Mr.">Mr</option>
+          <option value="Ms.">Miss</option>
+          <option value="Mrs.">Mrs</option>
+        </select>
+      </div>
+      <div class="inlinespace">
+        <label>First Name: </label><br/>
+        <input class="user" type="text" name="fname" placeholder="Enter Your First Name" required />
+      </div>
+      <div class="inlinespace">
+        <label>Middle Name: </label><br/>
+        <input class="user" type="text" name="mname" placeholder="Enter Your Middle Name" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="inlinespace">
+        <label>Last Name: </label><br/>
+        <input class="user" type="text" name="lname" placeholder="Enter Your Last Name" />
+      </div>
+      <div class="inlinespace">
+        <label>Gender: </label><br/>
+        <input type="radio" name="gender" value="male" />Male
+        <input type="radio" name="gender" value="female" />Female
+      </div>
+      <div class="inlinespace">
+        <label>D.O.B: </label><br/>
+        <input class="user" type="date" name="dob" placeholder="Enter Your D.O.B" />
+      </div>
+    </div>
+  </fieldset>
+
+  <br/><br/>
+
+  <fieldset>
+    <legend class="leg"><strong>Contact Information</strong></legend>
+    <div class="row">
+      <div class="inlinespace">
+        <label>Mobile No.: </label><br/>
+        <input class="user" type="number" name="MobNo" placeholder="Enter Your Mobile No." />
+      </div>
+      <div class="inlinespace">
+        <label>Email ID: </label><br/>
+        <input class="user" type="email" name="eid" placeholder="Enter Your Email" />
+      </div>
+      <div class="inlinespace">
+        <label>Address</label><br/>
+        <textarea name="address"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class="inlinespace">
+        <label>Pincode</label><br/>
+        <input class="user" type="tel" maxlength="6" name="pincode" placeholder="Enter Your Pincode" />
+      </div>
+      <div class="inlinespace">
+        <label>City</label><br/>
+        <input class="user" type="text" name="city" placeholder="Enter Your City" />
+      </div>
+      <div class="inlinespace">
+        <label>State: </label><br/>
+        <select name="state" class="user">
+          <option selected="">Select State</option>
+          <option value="AS">Assam</option>
+          <option value="AP">Andra Pradesh</option>
+          <option value="BR">Bihar</option>
+          <option value="CH">Chattisgar</option>
+          <option value="KL">Kerala</option>
+          <option value="KA">Karnataka</option>
+        </select>
+      </div>
+    </div>
+  </fieldset>
+</form>
+<br/>
+<button class="submit">Submit</button>
+<button class="reset">Reset</button>

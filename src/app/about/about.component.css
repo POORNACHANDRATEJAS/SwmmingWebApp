@@ -1,0 +1,49 @@
+a{
+  text-decoration: none;
+  color: #666;
+}
+.he{
+  color: #666;
+  font-size: 18px;
+  margin: 10px 0px 0px;
+  padding: 0px;
+  font-family: 'PT Sans', sans-serif !important;
+}
+.left{
+  float: left;
+}
+div{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.right{
+  float: right;
+}
+.inline{
+  display: inline-block;
+  margin-right: 10px;
+}
+.hes{
+  color: #666;
+  top: 10px;
+  padding-right: 0;
+  background: none;
+  position: relative;
+  margin: 0px 0px 15px;
+  list-style: none;
+  font-family: 'PT Sans', sans-serif !important;
+}
+.container{
+  padding-right: 50px;
+  padding-left: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.cont{
+  margin-left: 18em;
+
+}
+p{
+text-align: justify;
+width:53em;
+}

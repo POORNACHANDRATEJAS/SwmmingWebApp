@@ -1,0 +1,55 @@
+.he{
+  color: #666;
+  font-size: 18px;
+  margin: 10px 0px 0px;
+  padding: 0px;
+  font-family: 'PT Sans', sans-serif !important;
+}
+.right{
+  float: right;
+}
+.inline{
+  display: inline-block;
+  margin-right: 10px;
+}
+.hes{
+  color: #666;
+  top: 10px;
+  padding-right: 0;
+  background: none;
+  position: relative;
+  margin: 0px 0px 15px;
+  list-style: none;
+  font-family: 'PT Sans', sans-serif !important;
+}
+.container{
+  padding-right: 50px;
+  padding-left: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.left{
+  float: left;
+}
+input{
+  width: 40%;
+  height: 30px;
+}
+textarea{
+  width: 40%;
+  height: 100px;
+}
+button{
+  background-color: hsl(206, 64%, 38%);
+  color: white;
+  padding: 5px;
+  font-size: 15px;
+  border: none;
+}
+.mar{
+  margin-left: 100px;
+}
+a{
+  text-decoration: none;
+  color: #666;
+}
