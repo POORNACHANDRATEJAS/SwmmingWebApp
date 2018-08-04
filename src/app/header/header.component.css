@@ -1,0 +1,30 @@
+a{
+  text-decoration: none;
+  color: white;
+}
+img{
+  border-radius: 10px;
+  padding-top: 10px;
+}
+.sticky {
+  position: sticky;
+  top: 0;
+}
+.dol{
+  float: left;
+  margin-right: 20em;
+  margin-left: 10em;
+}
+.home{
+  background-color: hsl(206, 64%, 38%);
+  height:70px;
+  width: 100%;
+  border-radius: 5px;
+}
+.selCont{
+  color: white;
+  font-size: 20px;
+  padding: 0px 10px;
+  float: left;
+  margin: 25px 9px 0px 0px;
+}
