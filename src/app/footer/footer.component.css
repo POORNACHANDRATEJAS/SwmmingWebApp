@@ -1,0 +1,27 @@
+.inline{
+  display: inline-block;
+  margin-left: 30px;
+}
+.bot{
+  background-color: hsl(206, 64%, 38%);
+  height:80px;
+  width: 100%;
+  border-radius: 5px;
+}
+.cont{
+  display: inline-block;
+  vertical-align: top;
+  border-right: 2px solid white;
+  padding: 10px 10px;
+  color: white;
+  font-size: 20px;
+}
+img{
+  border-radius: 10px;
+  padding-top: 10px;
+}
+.dol{
+  float: left;
+  margin-right: 20em;
+  margin-left: 10em;
+}
