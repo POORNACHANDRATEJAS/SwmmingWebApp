@@ -8,6 +8,12 @@ import { RegistrationComponent } from './registration/registration.component';
 import { AppRoutingModule }     from './app-routing.module';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
+import { CarouselComponent } from './carousel/carousel.component';
+
+
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -15,12 +21,16 @@ import { ContactComponent } from './contact/contact.component';
     HomeComponent,
     RegistrationComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent,
+    HeaderComponent,
+    CarouselComponent,
   ],
   imports: [
     NgbModule.forRoot(),
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
