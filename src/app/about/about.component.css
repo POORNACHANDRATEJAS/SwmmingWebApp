@@ -39,13 +39,8 @@ div{
   margin-right: auto;
   margin-left: auto;
 }
-.cont{
-  margin-left: 18em;
-
-}
 p{
 text-align: justify;
-width:53em;
 }
 
 .select{
@@ -78,6 +73,24 @@ table, th, td {
     border-collapse: collapse;
     text-align: center;
   }
-  body{
+  /* body{
     background-color: cornsilk;
+  } */
+
+  .row{
+    text-align: center;
+  }
+  .col-4 bg-warning{
+   font-size: 20px;
+  }
+  .abt{
+    text-align: center;
+    font-size: 25px;
+  }
+  .alignCenter{
+    align-self: center;
+  }
+  .imgTrainer{
+    width: 100%;
+    max-width: 180px;
   }
