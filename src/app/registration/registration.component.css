@@ -23,11 +23,14 @@ a{
   margin-right: 10px;
 }
 .reg{
-  margin-left: 80px;
+  margin-left: 100px;
   background-color: beige;
   margin-right: 90px;
-  padding: 10px 90px 10px 90px;
+  padding: 10px 0px 10px 150px;
   border-radius: 10px;
+    border-style: solid;
+    border-width: 2px 8px 4px 30px;
+    border-color: rgb(248, 202, 146);
 }
 .mac{
   margin-top: -50px;
@@ -70,7 +73,7 @@ a{
   background-color: #6e9be5;
   font-size: 16px;
   border-radius: 5px;
-  margin-left: 28em;
+  margin-left: 24em;
 }
 .user{
   height: 24px;
