@@ -1,27 +1,26 @@
-<div class="sticky">
-  <div class="home">
-    <div class="dol">
-      <img [src]="dolImg" width="180px"/>
-    </div>
-    <ul class="Menu">
-      <div>
-        <li><a  routerLink="/home">Home</a></li>
-      </div>
-      <div>
-        <nav>
-         <li> <a  routerLink="/registration">Registration</a></li>
-        </nav>
-      </div>
-      <div>
-        <nav>
-          <li><a  routerLink="/about">About</a></li>
-        </nav>
-      </div>
-      <div>
-        <nav>
-          <li><a  routerLink="/contact">Contact Us</a></li>
-        </nav>
-      </div>
+
+
+<nav class="navbar navbar-expand-md navbar-dark bg-info fixed-top">
+  <a class="navbar-brand" href="#"><img [src]="dolImg" width="100px"/></a>
+  <button class="navbar-toggler hidden-sm-up" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="navbarsDefault">
+    <ul class="navbar-nav ml-auto">
+      <li>
+        <a class="nav-link" routerLink="/home">Home</a>
+      </li>
+      <li>
+        <a class="nav-link" routerLink="/registration">Registration</a>
+      </li>
+      <li>
+        <a class="nav-link" routerLink="/about">About</a>
+      </li>
+      <li>
+        <a class="nav-link" routerLink="/contact">Contact</a>
+      </li>
     </ul>
-    </div>
-  </div>
+  </div> 
+</nav>
+
+

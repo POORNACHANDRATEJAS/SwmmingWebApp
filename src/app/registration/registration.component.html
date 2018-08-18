@@ -1,4 +1,5 @@
 
+  <br/><br/>
 <div class="container">
   <div class="he">
     <h3 class="left">Registration</h3>
@@ -12,18 +13,19 @@
 </div>
 
 <br/><br/><hr/>
-
+<div class="reg container">
 <div>
   <h1 class="main box">Swimming Admission Form</h1>
 </div>
 
-<ngb-tabset [justify]="currentJustify">
+  <ngb-tabset type="pills">
     <ngb-tab title="Personal Info">
       <ng-template ngbTabContent>
+          <br/>
           <fieldset>
               <legend class="leg"><strong>Personal Information</strong></legend>
               <div class="row">
-                <div class="inlinespace">
+                <div class="inlinespace col-4">
                   <label>Initial: </label><br/>
                   <select name="initial" class="user">
                     <option selected="">Select Initial</option>
@@ -32,63 +34,69 @@
                     <option value="Mrs.">Mrs</option>
                   </select>
                 </div>
-                <div class="inlinespace">
+                <div class="inlinespace col-4">
                   <label>First Name: </label><br/>
                   <input class="user" type="text" name="fname" placeholder="Enter Your First Name" required />
                 </div>
-                <div class="inlinespace">
+                <div class="inlinespace col-4">
                   <label>Middle Name: </label><br/>
                   <input class="user" type="text" name="mname" placeholder="Enter Your Middle Name" />
                 </div>
               </div>
               <div class="row">
-                <div class="inlinespace">
+                <div class="inlinespace col-4">
                   <label>Last Name: </label><br/>
                   <input class="user" type="text" name="lname" placeholder="Enter Your Last Name" />
                 </div>
-                <div class="inlinespace">
+                <div class="inlinespace col-4">
                   <label>Gender: </label><br/>
                   <input type="radio" name="gender" value="male" />Male
                   <input type="radio" name="gender" value="female" />Female
                 </div>
-                <div class="inlinespace">
+                <div class="inlinespace col-4">
                   <label>D.O.B: </label><br/>
                   <input class="user" type="date" name="dob" placeholder="Enter Your D.O.B" />
                 </div>
               </div>
             </fieldset>
+            <br/>
+          <button class="submit">Submit</button>
+          <button type="reset" value="Reset" class="reset">Reset</button>
+          <br/><br/>
       </ng-template>
     </ngb-tab>
+    
     <ngb-tab>
       <ng-template ngbTabTitle>Contact Info</ng-template>
       <ng-template ngbTabContent>
+        <br/>
         <form>
           <fieldset>
             <legend class="leg"><strong>Contact Information</strong></legend>
             <div class="row">
-              <div class="inlinespace">
+              <div class="inlinespace col-4">
                 <label>Mobile No.: </label><br/>
                 <input class="user" type="number" name="MobNo" placeholder="Enter Your Mobile No." />
               </div>
-              <div class="inlinespace">
+              <div class="inlinespace col-4">
                 <label>Email ID: </label><br/>
                 <input class="user" type="email" name="eid" placeholder="Enter Your Email" />
               </div>
-              <div class="inlinespace">
+              <div class="inlinespace col-4">
                 <label>Address</label><br/>
                 <textarea name="address"></textarea>
               </div>
             </div>
             <div class="row">
-              <div class="inlinespace">
+              <div class="inlinespace col-4">
                 <label>Pincode</label><br/>
                 <input class="user" type="tel" maxlength="6" name="pincode" placeholder="Enter Your Pincode" />
               </div>
-              <div class="inlinespace">
+              <div class="inlinespace col-4">
                 <label>City</label><br/>
                 <input class="user" type="text" name="city" placeholder="Enter Your City" />
               </div>
-              <div class="inlinespace">
+              <div class="inlinespace col-4">
                 <label>State: </label><br/>
                 <select name="state" class="user">
                   <option selected="">Select State</option>
@@ -105,8 +113,8 @@
         </form>
           <br/>
           <button class="submit">Submit</button>
-          <button class="reset">Reset</button>
+          <button type="reset" value="Reset" class="reset">Reset</button>
+          <br/><br/>
       </ng-template>
     </ngb-tab>
-
-
+    
