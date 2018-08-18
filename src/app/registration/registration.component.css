@@ -22,7 +22,19 @@ a{
   display: inline-block;
   margin-right: 10px;
 }
-
+.reg{
+  margin-left: 100px;
+  background-color: beige;
+  margin-right: 90px;
+  padding: 10px 0px 10px 150px;
+  border-radius: 10px;
+    border-style: solid;
+    border-width: 2px 8px 4px 30px;
+    border-color: rgb(248, 202, 146);
+}
+.mac{
+  margin-top: -50px;
+}
 .hes{
   color: #666;
   top: 10px;
@@ -61,13 +73,13 @@ a{
   background-color: #6e9be5;
   font-size: 16px;
   border-radius: 5px;
-  margin-left: 38em;
+  margin-left: 24em;
 }
 .user{
   height: 24px;
   width: 15em;
   font-size: 16px;
-  border-radius: 8px;
+  border-radius: 2px;
 }
 .row{
   padding: 8px 40px;
@@ -87,7 +99,7 @@ a{
 input[type=text]{
     box-sizing: border-box;
     border: 2px solid #ccc;
-    border-radius: 4px;
+    border-radius: 2px;
     font-size: 16px;
     padding: 12px 20px 12px 30px;
     transition: width 0.5s ease-in-out;

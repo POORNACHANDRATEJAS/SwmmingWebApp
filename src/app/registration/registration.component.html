@@ -1,4 +1,5 @@
 
+  <br/><br/>
 <div class="container">
   <div class="he">
     <h3 class="left">Registration</h3>
@@ -12,14 +13,15 @@
 </div>
 
 <br/><br/><hr/>
-
+<div class="reg">
 <div>
   <h1 class="main box">Swimming Admission Form</h1>
 </div>
 
-<ngb-tabset [justify]="currentJustify">
+  <ngb-tabset type="pills">
     <ngb-tab title="Personal Info">
       <ng-template ngbTabContent>
+          <br/>
           <fieldset>
               <legend class="leg"><strong>Personal Information</strong></legend>
               <div class="row">
@@ -57,11 +59,17 @@
                 </div>
               </div>
             </fieldset>
+            <br/>
+          <button class="submit">Submit</button>
+          <button type="reset" value="Reset" class="reset">Reset</button>
+          <br/><br/>
       </ng-template>
     </ngb-tab>
+    
     <ngb-tab>
       <ng-template ngbTabTitle>Contact Info</ng-template>
       <ng-template ngbTabContent>
+        <br/>
         <form>
           <fieldset>
             <legend class="leg"><strong>Contact Information</strong></legend>
@@ -105,8 +113,8 @@
         </form>
           <br/>
           <button class="submit">Submit</button>
-          <button class="reset">Reset</button>
+          <button type="reset" value="Reset" class="reset">Reset</button>
+          <br/><br/>
       </ng-template>
     </ngb-tab>
-
-
+    
