@@ -6,13 +6,10 @@ img{
   border-radius: 10px;
   padding-top: 10px;
 }
-.sticky {
-  position: sticky;
-  top: 0;
-}
+
 .dol{
   float: left;
-  margin-right: 20em;
+  margin-right: 22em;
   margin-left: 10em;
 }
 .home{
@@ -20,11 +17,38 @@ img{
   height:70px;
   width: 100%;
   border-radius: 5px;
+  
 }
-.selCont{
+.Menu {
+ list-style-type: none;
   color: white;
   font-size: 20px;
-  padding: 0px 10px;
-  float: left;
-  margin: 25px 9px 0px 0px;
+  padding: 10px 10px;
+  margin: 25px 9px 10px 10px;
+
 }
+ul.Menu li{float:right;}
+
+ul.Menu li a{
+ display: block;
+padding: 15px 16px;
+    
+  }
+
+
+ul.Menu li a:hover:not(.active) {background-color: #111;}
+
+ul.Menu li a.active {background-color: #4CAF50;}
+
+ul.Menu li.right {float: right;}
+
+@media screen and (max-width: 500px){
+    ul.Menu li.right, 
+    ul.Menu li {float: none;}
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
