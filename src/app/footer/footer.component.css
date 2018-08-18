@@ -1,9 +1,6 @@
 .center{
   text-align: center;
 }
-
-
-
 .inline{
   display: inline-block;
   margin-left: 45px;
@@ -25,6 +22,9 @@
   padding: 10px 10px ;
   color: white;
   font-size: 20px;
+}
+.row{
+  align-content: center;
 }
 img{
   border-radius: 10px;
