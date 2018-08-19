@@ -1,17 +1,12 @@
 
 
 <br/>
-  <div class="he container">
+  <div class="bg-warning">
     <h3 class="left">Contact Us</h3>
   </div>
-  <ul class="right hes">
-    <li class="inline">
-      <a routerLink="/home">Home</a>
-    </li>
-    <li class="inline"> / Contact Us</li>
-  </ul>
+  <br>
 
-<br/><br/><hr/>
+<hr/>
 <!--<div class="row">
   <div class="col-8">
 <div class="mar">
@@ -40,81 +35,74 @@
 </div>
 -->
 
-<div class="row bg-success">
+<div class="row bg-warning p-3">
 
         <!--Grid column-->
-        <div class="col-md-10 mb-md-0 mb-5">
+        <div class="col-md-8 mb-md-0 mb-5">
             <form id="contact-form" name="contact-form" action="mail.php" method="POST">
 
                 <!--Grid row-->
                 <div class="row bg-warning">
 
                     <!--Grid column-->
-                    <div class="col-md-5">
+                    <div class="col-md-12">
                         <div class="md-form mb-0">
-                            <input type="text" id="name" name="name" class="form-control" placeholder="Full Name">
-                            <label for="name" class="">Your name</label>
+                          <label for="name" class="">Your name:</label><span>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Full Name"></span>    
                         </div>
-                    </div>
-                    <!--Grid column-->
 
-                    <!--Grid column-->
-                    <div class="col-md-5">
                         <div class="md-form mb-0">
+                          <label for="email" class="">Your email:</label>
                             <input type="text" id="email" name="email" class="form-control" placeholder="Ex: nonamen@gmail.com">
-                            <label for="email" class="">Your email</label>
-                        </div>
-                    </div>
-                    <!--Grid column-->
-
-                </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row bg-warning">
-                    <div class="col-md-10">
-                        <div class="md-form col-md-5 mb-0">
-                            <input type="text" id="subject" name="subject" class="form-control" placeholder="Your Subject">
-                            <label for="subject" class="">Subject</label>
+                            
                         </div>
 
-                        <div class="md-form col-md-5 mb-0">
+                        <div class="md-form mb-0">
+                          <label for="subject" class="">Mobile No.:</label>
                             <input type="number" id="mobileNumber" name="mobileNumber" class="form-control" placeholder="phone No.">
-                            <label for="subject" class="">Mobile No.</label>
+                            
                         </div>
-                    </div>
-                </div>
-                <!--Grid row-->
 
-                <!--Grid row-->
-                <div class="row bg-warning">
-
-                    <!--Grid column-->
-                    <div class="col-md-8">
+                        <div class="md-form mb-0">
+                          <label for="subject" class="">Subject:</label>
+                            <input type="text" id="subject" name="subject" class="form-control" placeholder="Your Subject">
+                            
+                        </div>
 
                         <div class="md-form">
+                            <label for="message">Your message:</label>
                             <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" placeholder="type your message here"></textarea>
-                            <label for="message">Your message</label>
                         </div>
 
                     </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <!--Grid column-->
+
                 </div>
                 <!--Grid row-->
+
+                <!--Grid row-->
+                <!--<div class="row bg-warning">
+                    <div class="col-md-10">
+                        
+
+                        
+                   -Grid row-->
 
             </form>
 
-            <div class="text-center text-md-left">
+            <div class="text-center text-md-left bg-warning md-form mb-0">
                 <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
             </div>
             <div class="status"></div>
         </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
+        
         
 
-<div class = "col-2">
-<div style="float: right; vertical-align: top;" >
+<div class = "col-4">
+<div style=" vertical-align: top;" >
   <h1>{{ maptitle }}</h1>
 
 <!-- this creates a google map on the page with the given lat/lng from -->
