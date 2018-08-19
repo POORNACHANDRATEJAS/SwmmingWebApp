@@ -57,22 +57,7 @@ table, th, td {
   font-size: 20px;
 }
 
-  thead th{
-		color: #3a18e2;
-	
-		font-size: 30px;
-		font-style: italic;
-	}
-	tr td{
-		text-align: center;
-		font-size: 18px;
-		font-style: italic;
-	}
-	table, th, td {
-		border:1px dotted black;
-    border-collapse: collapse;
-    text-align: center;
-  }
+  
   /* body{
     background-color: cornsilk;
   } */
@@ -90,7 +75,35 @@ table, th, td {
   .alignCenter{
     align-self: center;
   }
-  .imgTrainer{
+  /* .imgTrainer{
     width: 100%;
     max-width: 180px;
-  }
+  } */
+
+  * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+}
+
+.container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container img {vertical-align: middle;}
+
+.container .content {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+    color: #f1f1f1;
+    /* width: 100%; */
+    padding: 20px;
+    margin-right: 50px;
+}
