@@ -71,13 +71,17 @@
       <ng-template ngbTabTitle>Contact Info</ng-template>
       <ng-template ngbTabContent>
         <br/>
+<<<<<<< HEAD
         <form (submit)="saveContactInfo">
+=======
+        <form (submit)= "saveContactInfo()">
+>>>>>>> 4a50299b6e9f484470ed2c2923c82ce6d8bd4495
           <fieldset>
             <legend class="leg"><strong>Contact Information</strong></legend>
             <div class="row">
               <div class="inlinespace col-sm-12 col-md-6 col-lg-4">
                 <label>Mobile No.: </label><br/>
-                <input class="user" type="number" name="MobNo" [(ngModel)]="contact.Mobilenumber" placeholder="Enter Your Mobile No." />
+                <input class="user" type="number" name="MobNo" [(ngModel)]="contact.mobilenumber" placeholder="Enter Your Mobile No." />
               </div>
               <div class="inlinespace col-sm-12 col-md-6 col-lg-4">
                 <label>Email ID: </label><br/>
@@ -85,7 +89,7 @@
               </div>
               <div class="inlinespace col-sm-12 col-md-6 col-lg-4">
                 <label>Address</label><br/>
-                <textarea name="address"></textarea>
+                <textarea name="address" [(ngModel)]="contact.address"></textarea>
               </div>
             
               <div class="inlinespace col-sm-12 col-md-6 col-lg-4">
