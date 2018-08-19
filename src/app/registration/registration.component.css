@@ -57,18 +57,15 @@ a{
   font-size: 16px;
 }
 .reset{
-  padding: 10px 20px;
+  margin-left: 5px;
   background-color: #6e9be5;
   font-size: 16px;
   border-radius: 5px;
-  margin-left: 5px;
 }
 .submit{
-  padding: 10px 20px;
   background-color: #6e9be5;
   font-size: 16px;
   border-radius: 5px;
-  margin-left: 24em;
 }
 .user{
   height: 24px;
