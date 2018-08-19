@@ -1,9 +1,5 @@
-.carousel-item img{
-	height: 400px !important;
-	}
-.carousel-item  {
-    top: -50px !important;
-    z-index: -1 !important;
+.carousel-item{
+	height: 300px !important;
 }
 body{
 	font-family: 'Montserrat', sans-serif !important;
@@ -18,8 +14,7 @@ body{
 	padding: 10px;
 	border: 1px solid #111;
 	border-radius: 50%;
-
-}
+	}
 .how-it-works h3{
 	padding: 30px 0px;
 	margin: 0px;
