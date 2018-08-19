@@ -48,8 +48,17 @@ button{
 }
 .mar{
   margin-left: 100px;
+
 }
 a{
   text-decoration: none;
   color: #666;
+}
+
+agm-map {
+  height: 300px;
+  width: 300px;
+  float: right;
+  vertical-align: top;
+  
 }

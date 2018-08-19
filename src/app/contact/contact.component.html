@@ -10,6 +10,8 @@
   </ul>
 
 <br/><br/><br/><br/><hr/>
+<div class="row">
+  <div class="col-6">
 <div class="mar">
 <p> For enquiries about our Competitive Swimming Program please contact: </p>
 <div>
@@ -33,3 +35,23 @@
 </div><br/>
 <button type="button">Send Message</button>
 </div>
+</div>
+
+<div class = "col-4">
+<div style="float: right; vertical-align: top;" >
+  <h1>{{ maptitle }}</h1>
+
+<!-- this creates a google map on the page with the given lat/lng from -->
+<!-- the component as the initial center of the map: -->
+<agm-map [latitude]="lat" [longitude]="lng">
+  <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+</agm-map>
+
+</div>
+</div>
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+
+
+
+
+ 

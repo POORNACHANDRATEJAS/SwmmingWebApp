@@ -20,7 +20,6 @@ a{
 }
 .inline{
   display: inline-block;
-  margin-right: 10px;
 }
 .reg{
   background-color: beige;
@@ -54,7 +53,6 @@ a{
 }
 .inlinespace{
   display: inline-block;
-  width: 32%;
   font-weight: bold;
   font-size: 16px;
 }
@@ -78,9 +76,7 @@ a{
   font-size: 16px;
   border-radius: 2px;
 }
-.row{
-  padding: 8px 40px;
-}
+
 .leg{
   font-size: 20px;
 }

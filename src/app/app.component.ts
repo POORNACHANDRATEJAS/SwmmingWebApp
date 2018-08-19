@@ -15,4 +15,8 @@ export class AppComponent {
   tweetImg = 'https://directsoftwareoutlet.com/wp-content/uploads/2016/04/twitterLogo-white.png';
   gooImg = 'https://www.hamiltongrp-ohio.com/wp-content/uploads/2017/08/googleplus_white.png';
   youImg = 'http://www.bachiosaurus.com/wp-content/uploads/2017/02/youtube1.gif';
+
+  maptitle: string = 'My first AGM project';
+  lat: number = 12.904980;
+  lng: number = 77.552660;
 }
