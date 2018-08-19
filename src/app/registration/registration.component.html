@@ -41,27 +41,27 @@
                   </div>
                   <div class="inlinespace col-sm-12 col-md-6 col-lg-4">
                     <label>Middle Name: </label><br/>
-                    <input class="user" type="text" name="mname" placeholder="Enter Your Middle Name" />
+                    <input class="user" type="text" name="mname" [(ngModel)]="personal.middlename" placeholder="Enter Your Middle Name" />
                   </div>
                 
                   <div class="inlinespace col-sm-12 col-md-6 col-lg-4 ">
                     <label>Last Name: </label><br/>
-                    <input class="user" type="text" name="lname" placeholder="Enter Your Last Name" />
+                    <input class="user" type="text" name="lname" [(ngModel)]="personal.lastname" placeholder="Enter Your Last Name" />
                   </div>
                   <div class="inlinespace col-sm-12 col-md-6 col-lg-4">
                     <label>Gender: </label><br/>
-                    <input type="radio" name="gender" value="male" />Male
-                    <input type="radio" name="gender" value="female" />Female
+                    <input type="radio" name="gender" value="male" [(ngModel)]="personal.gender" />Male
+                    <input type="radio" name="gender" value="female" [(ngModel)]="personal.gender" />Female
                   </div>
                   <div class="inlinespace col-sm-12 col-md-6 col-lg-4">
                     <label>D.O.B: </label><br/>
-                    <input class="user" type="date" name="dob" placeholder="Enter Your D.O.B" />
+                    <input class="user" type="date" name="dob" [(ngModel)]="personal.dob" placeholder="Enter Your D.O.B" />
                   </div>
                 </div>
               </fieldset>
               <br/>
-            <button class="submit">Submit</button>
-            <button type="reset" value="Reset" class="reset">Reset</button>
+            <button class="submit col-sm-12 col-md-6 col-lg-2 center">Submit</button>
+            <button type="reset " value="Reset" class="reset col-sm-12 col-md-6 col-lg-2 center">Reset</button>
             <br/><br/>
           </form>
       </ng-template>
@@ -71,34 +71,34 @@
       <ng-template ngbTabTitle>Contact Info</ng-template>
       <ng-template ngbTabContent>
         <br/>
-        <form>
+        <form (submit)= "saveContactInfo()">
           <fieldset>
             <legend class="leg"><strong>Contact Information</strong></legend>
             <div class="row">
               <div class="inlinespace col-sm-12 col-md-6 col-lg-4">
                 <label>Mobile No.: </label><br/>
-                <input class="user" type="number" name="MobNo" placeholder="Enter Your Mobile No." />
+                <input class="user" type="number" name="MobNo" [(ngModel)]="contact.mobilenumber" placeholder="Enter Your Mobile No." />
               </div>
               <div class="inlinespace col-sm-12 col-md-6 col-lg-4">
                 <label>Email ID: </label><br/>
-                <input class="user" type="email" name="eid" placeholder="Enter Your Email" />
+                <input class="user" type="email" name="eid" [(ngModel)]="contact.emailid" placeholder="Enter Your Email" />
               </div>
               <div class="inlinespace col-sm-12 col-md-6 col-lg-4">
                 <label>Address</label><br/>
-                <textarea name="address"></textarea>
+                <textarea name="address" [(ngModel)]="contact.address"></textarea>
               </div>
             
               <div class="inlinespace col-sm-12 col-md-6 col-lg-4">
                 <label>Pincode</label><br/>
-                <input class="user" type="tel" maxlength="6" name="pincode" placeholder="Enter Your Pincode" />
+                <input class="user" type="tel" maxlength="6" name="pincode" [(ngModel)]="contact.pincode" placeholder="Enter Your Pincode" />
               </div>
               <div class="inlinespace col-sm-12 col-md-6 col-lg-4">
                 <label>City</label><br/>
-                <input class="user" type="text" name="city" placeholder="Enter Your City" />
+                <input class="user" type="text" name="city" [(ngModel)]="contact.city" placeholder="Enter Your City" />
               </div>
               <div class="inlinespace col-sm-12 col-md-6 col-lg-4">
                 <label>State: </label><br/>
-                <select name="state" class="user">
+                <select name="state" class="user" [(ngModel)]="contact.state">
                   <option selected="">Select State</option>
                   <option value="AS">Assam</option>
                   <option value="AP">Andra Pradesh</option>
@@ -112,8 +112,8 @@
           </fieldset>
         </form>
           <br/>
-          <button class="submit">Submit</button>
-          <button type="reset" value="Reset" class="reset">Reset</button>
+          <button class="submit col-sm-12 col-md-6 col-lg-2 center">Submit</button>
+            <button type="reset " value="Reset" class="reset col-sm-12 col-md-6 col-lg-2 center">Reset</button>
           <br/><br/>
       </ng-template>
     </ngb-tab>
