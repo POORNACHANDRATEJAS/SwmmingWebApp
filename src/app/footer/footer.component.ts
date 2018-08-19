@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-footer',
-  templateUrl: './footer.component.html',
+  templateUrl: './footer.component.html', 
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
@@ -13,6 +13,8 @@ export class FooterComponent implements OnInit {
 	tweetImg = 'https://directsoftwareoutlet.com/wp-content/uploads/2016/04/twitterLogo-white.png';
 	gooImg = 'https://www.hamiltongrp-ohio.com/wp-content/uploads/2017/08/googleplus_white.png';
 	youImg = 'http://www.bachiosaurus.com/wp-content/uploads/2017/02/youtube1.gif';
+
+	footerlogo='assets/Learn-to-Swim.png';
 
 
 	constructor() { }
