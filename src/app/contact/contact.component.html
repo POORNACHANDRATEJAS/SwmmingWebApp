@@ -1,3 +1,5 @@
+
+
 <br/>
   <div class="he container">
     <h3 class="left">Contact Us</h3>
@@ -9,9 +11,9 @@
     <li class="inline"> / Contact Us</li>
   </ul>
 
-<br/><br/><br/><br/><hr/>
-<div class="row">
-  <div class="col-6">
+<br/><br/><hr/>
+<!--<div class="row">
+  <div class="col-8">
 <div class="mar">
 <p> For enquiries about our Competitive Swimming Program please contact: </p>
 <div>
@@ -36,8 +38,82 @@
 <button type="button">Send Message</button>
 </div>
 </div>
+-->
 
-<div class = "col-4">
+<div class="row bg-success">
+
+        <!--Grid column-->
+        <div class="col-md-10 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                <!--Grid row-->
+                <div class="row bg-warning">
+
+                    <!--Grid column-->
+                    <div class="col-md-5">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Full Name">
+                            <label for="name" class="">Your name</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-5">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control" placeholder="Ex: nonamen@gmail.com">
+                            <label for="email" class="">Your email</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row bg-warning">
+                    <div class="col-md-10">
+                        <div class="md-form col-md-5 mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control" placeholder="Your Subject">
+                            <label for="subject" class="">Subject</label>
+                        </div>
+
+                        <div class="md-form col-md-5 mb-0">
+                            <input type="number" id="mobileNumber" name="mobileNumber" class="form-control" placeholder="phone No.">
+                            <label for="subject" class="">Mobile No.</label>
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row bg-warning">
+
+                    <!--Grid column-->
+                    <div class="col-md-8">
+
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" placeholder="type your message here"></textarea>
+                            <label for="message">Your message</label>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+
+            </form>
+
+            <div class="text-center text-md-left">
+                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+            </div>
+            <div class="status"></div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        
+
+<div class = "col-2">
 <div style="float: right; vertical-align: top;" >
   <h1>{{ maptitle }}</h1>
 
@@ -49,6 +125,7 @@
 
 </div>
 </div>
+
 <script src="http://maps.googleapis.com/maps/api/js"></script>
 
 
