@@ -22,46 +22,48 @@
     <ngb-tab title="Personal Info">
       <ng-template ngbTabContent>
           <br/>
-          <fieldset>
-              <legend class="leg"><strong>Personal Information</strong></legend>
-              <div class="row">
-                <div class="inlinespace col-sm-12 col-md-6 col-lg-4">
-                  <label>Initial: </label><br/>
-                  <select name="initial" class="user">
-                    <option selected="">Select Initial</option>
-                    <option value="Mr.">Mr</option>
-                    <option value="Ms.">Miss</option>
-                    <option value="Mrs.">Mrs</option>
-                  </select>
+          <form (submit)="savePersonalInfo()">
+            <fieldset>
+                <legend class="leg"><strong>Personal Information</strong></legend>
+                <div class="row">
+                  <div class="inlinespace col-sm-12 col-md-6 col-lg-4">
+                    <label>Initial: </label><br/>
+                    <select name="initial" class="user" [(ngModel)]="personal.initial">
+                      <option selected="">Select Initial</option>
+                      <option value="Mr.">Mr</option>
+                      <option value="Ms.">Miss</option>
+                      <option value="Mrs.">Mrs</option>
+                    </select>
+                  </div>
+                  <div class="inlinespace col-sm-12 col-md-6 col-lg-4">
+                    <label>First Name: </label><br/>
+                    <input class="user" type="text" name="fname" [(ngModel)]="personal.firstname" placeholder="Enter Your First Name" required />
+                  </div>
+                  <div class="inlinespace col-sm-12 col-md-6 col-lg-4">
+                    <label>Middle Name: </label><br/>
+                    <input class="user" type="text" name="mname" placeholder="Enter Your Middle Name" />
+                  </div>
+                
+                  <div class="inlinespace col-sm-12 col-md-6 col-lg-4 ">
+                    <label>Last Name: </label><br/>
+                    <input class="user" type="text" name="lname" placeholder="Enter Your Last Name" />
+                  </div>
+                  <div class="inlinespace col-sm-12 col-md-6 col-lg-4">
+                    <label>Gender: </label><br/>
+                    <input type="radio" name="gender" value="male" />Male
+                    <input type="radio" name="gender" value="female" />Female
+                  </div>
+                  <div class="inlinespace col-sm-12 col-md-6 col-lg-4">
+                    <label>D.O.B: </label><br/>
+                    <input class="user" type="date" name="dob" placeholder="Enter Your D.O.B" />
+                  </div>
                 </div>
-                <div class="inlinespace col-sm-12 col-md-6 col-lg-4">
-                  <label>First Name: </label><br/>
-                  <input class="user" type="text" name="fname" placeholder="Enter Your First Name" required />
-                </div>
-                <div class="inlinespace col-sm-12 col-md-6 col-lg-4">
-                  <label>Middle Name: </label><br/>
-                  <input class="user" type="text" name="mname" placeholder="Enter Your Middle Name" />
-                </div>
-              
-                <div class="inlinespace col-sm-12 col-md-6 col-lg-4 ">
-                  <label>Last Name: </label><br/>
-                  <input class="user" type="text" name="lname" placeholder="Enter Your Last Name" />
-                </div>
-                <div class="inlinespace col-sm-12 col-md-6 col-lg-4">
-                  <label>Gender: </label><br/>
-                  <input type="radio" name="gender" value="male" />Male
-                  <input type="radio" name="gender" value="female" />Female
-                </div>
-                <div class="inlinespace col-sm-12 col-md-6 col-lg-4">
-                  <label>D.O.B: </label><br/>
-                  <input class="user" type="date" name="dob" placeholder="Enter Your D.O.B" />
-                </div>
-              </div>
-            </fieldset>
-            <br/>
-          <button class="submit">Submit</button>
-          <button type="reset" value="Reset" class="reset">Reset</button>
-          <br/><br/>
+              </fieldset>
+              <br/>
+            <button class="submit">Submit</button>
+            <button type="reset" value="Reset" class="reset">Reset</button>
+            <br/><br/>
+          </form>
       </ng-template>
     </ngb-tab>
     
