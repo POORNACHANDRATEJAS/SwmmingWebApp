@@ -6,8 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./registration.component.css']
 })
 export class RegistrationComponent implements OnInit {
+  personal: { initial: string, firstname: string } = {initial: "Select Initial",firstname: ""};
+
   constructor() { }
   ngOnInit() {
+  }
+  savePersonalInfo() {
+  	console.log(this.personal);
   }
 
 }
