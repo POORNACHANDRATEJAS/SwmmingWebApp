@@ -20,13 +20,17 @@ export class RegistrationComponent implements OnInit {
     this._http.post('http://192.168.1.4:7999/api/v1/dummyApiContact',this.contact).subscribe((data) => {
       console.log(data);
       //sessionStorage.setItem('userid',data.result);
+      this.contact = {mobilenumber:"",emailid:"",pincode:"",city:"",state:"",address:"",type: "CONTACT_INFO", userid: sessionStorage.getItem('userid')};
     });
   }
   savePersonalInfo() {
     console.log(this.personal);
     this._http.post('http://192.168.1.4:7999/api/v1/dummyApi',this.personal).subscribe((data) => {
-      //console.log(data);
-      //sessionStorage.setItem('userid',data.result);
+      console.log(data);
+      if(data != undefined){
+        //sessionStorage.setItem('userid',data.result);
+        this.personal = {initial: "Select Initial",firstname: "",middlename: "",lastname: "",gender: "",dob: "",type: "PERSONAL_INFO"};
+      }
     });
   }
 
